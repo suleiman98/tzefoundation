@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    main header {
+      background-color: rgba(249, 250, 251, 1);
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 100%;
+    }
+    main header > div {
+      width: 91.666667%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 768px) {
+      main header > div {
+        width: 83.333333%;
+      }
+    }
+    main header > div h1 {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    main header p {text-align: center;}
+    .submit {
+      margin-top: calc(0.5rem * calc(1 - 0));
+      margin-bottom: calc(0.5rem * 0);
+      align-items: baseline;
+    }
+    @media (min-width: 768px) {
+      .submit {
+        display: flex;
+      }
+    }
+    .submit input {
+      border: 1px solid #eee;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      width: 92.5%;
+      margin-bottom: .5rem;
+    }
+    @media (min-width: 640px) {
+      .submit input {width: 94%;}
+    }
+    .submit button {
+      background-color: rgba(55, 65, 81, 1);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 0.25rem;
+      padding: 0.5rem 0;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    @media (min-width: 768px) {
+      .submit button {
+        width: 50%;
+        margin-left: 0.5rem;
+      }
+    }
+    .article-wrapper {
+      width: 91.666667%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    @media (min-width: 768px) {
+      .article-wrapper {
+        width: 83.333333%;
+      }
+    }
+    .article {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    .article div:first-child {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .article div:first-child {
+        display: block;
+      }
+    }
+    .article img {
+      width: 100%;
+      height: 11rem;
+      object-fit: cover;
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .article img {
+        display: block;
+      }
+    }
+    @media (min-width: 768px) {
+      .article .content {
+        margin-left: 1rem;
+      }
+    }
+    .article .content h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: .3rem;
+    }
+    .article .content .small {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: rgba(107, 114, 128, 1);
+      margin-bottom: .3rem;
+    }
+    .small + div {margin-bottom: .5rem;}
+    .article .content a {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: rgba(31, 41, 55, 1);
+      text-decoration: none;
+    }
+    .article .content svg {
+      color: rgba(31, 41, 55, 1);
+      width: 1rem;
+      height: 1rem;
+    }
+    footer {display: flex; flex-direction: column;}
+    @media (min-width: 768px) {
+      footer div {
+        display: none;
+      }
+    }
+    footer div a {color: rgba(31, 41, 55, 1);}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="aside">
+      <div class="aside-box">
+        <div class="box-top">
+          <h1 class="aside-text">Suleiman's Blog</h1>
+          <img src="https://images.unsplash.com/photo-1554230505-919a13968970?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="beauty" />
+          <p>Hi, My name is Suleiman Mustapha. I am a Frontend Developer. I find it pretty hard to introduce myself so I'm just gonna stop here.</p>
+          <div class="dir">
+            <a href="#">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.858 5.485a1 1 0 00-1.715 1.03L7.633 9H7a1 1 0 100 2h1.834l.166.277V12H7a1 1 0 100 2h2v1a1 1 0 102 0v-1h2a1 1 0 100-2h-2v-.723l.166-.277H13a1 1 0 100-2h-.634l1.492-2.486a1 1 0 10-1.716-1.029L10.034 9h-.068L7.858 5.485z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.858 5.485a1 1 0 00-1.715 1.03L7.633 9H7a1 1 0 100 2h1.834l.166.277V12H7a1 1 0 100 2h2v1a1 1 0 102 0v-1h2a1 1 0 100-2h-2v-.723l.166-.277H13a1 1 0 100-2h-.634l1.492-2.486a1 1 0 10-1.716-1.029L10.034 9h-.068L7.858 5.485z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.858 5.485a1 1 0 00-1.715 1.03L7.633 9H7a1 1 0 100 2h1.834l.166.277V12H7a1 1 0 100 2h2v1a1 1 0 102 0v-1h2a1 1 0 100-2h-2v-.723l.166-.277H13a1 1 0 100-2h-.634l1.492-2.486a1 1 0 10-1.716-1.029L10.034 9h-.068L7.858 5.485z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="#">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.858 5.485a1 1 0 00-1.715 1.03L7.633 9H7a1 1 0 100 2h1.834l.166.277V12H7a1 1 0 100 2h2v1a1 1 0 102 0v-1h2a1 1 0 100-2h-2v-.723l.166-.277H13a1 1 0 100-2h-.634l1.492-2.486a1 1 0 10-1.716-1.029L10.034 9h-.068L7.858 5.485z" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <div class="box-bottom">
+          <div>
+            <a href="#" class="flex">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+              <span class="ml-2">Home</span>
+            </a>
+            <a href="./post.html" class="flex">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path></svg>
+              <span class="ml-2">Post</span>
+            </a>
+            <a href="./about.html" class="flex">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+              <span class="ml-2">About</span>
+            </a>
+          </div>
+          <button>Get in Touch</button>
+        </div>
+      </div>
+    </div>
+    <header class="mobile-header">
+      <div>
+      <svg class="w-9 h-9" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      <h1>Suleiman's Blog</h1>
+      </div>
+    </header>
+    <main>
+      <header>
+        <div>
+          <h1>CodeBlog - A Blog Made For Coders and Developers alike</h1>
+          <p>Welcome to my Blog. Subscribe and get my latest blog post in your box.</p>
+          <div class="submit">
+            <input type="text" placeholder="Enter email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </header>
+      <article>
+        <div class="article-wrapper">
+          <article class="article">
+            <div>
+              <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="beauty">
+            </div>
+            <div class="content">
+              <h1>Why Coding is Fun</h1>
+              <div class="small">
+                <span>Published 3 days ago ·</span>
+                <span>2 min read ·</span>
+                <span>4 comments</span>
+              </div>
+              <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam quis laboriosam maiores vitae obcaecati sequi asperiores magnam fugit, facilis saepe culpa, cumque inventore debitis iusto corrupti quos repellat quisquam?</div>
+              <a href="#" class="flex">
+                Read more...
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </article>
+          <article class="article">
+            <div>
+              <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="beauty">
+            </div>
+            <div class="content">
+              <h1>Why Coding is Fun</h1>
+              <div class="small">
+                <span>Published 3 days ago ·</span>
+                <span>2 min read ·</span>
+                <span>4 comments</span>
+              </div>
+              <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam quis laboriosam maiores vitae obcaecati sequi asperiores magnam fugit, facilis saepe culpa, cumque inventore debitis iusto corrupti quos repellat quisquam?</div>
+              <a href="#" class="flex">
+                Read more...
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </article>
+          <article class="article">
+            <div>
+              <img src="https://images.unsplash.com/photo-1503104834685-7205e8607eb9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="beauty">
+            </div>
+            <div class="content">
+              <h1>Why Coding is Fun</h1>
+              <div class="small">
+                <span>Published 3 days ago ·</span>
+                <span>2 min read ·</span>
+                <span>4 comments</span>
+              </div>
+              <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ipsam quis laboriosam maiores vitae obcaecati sequi asperiores magnam fugit, facilis saepe culpa, cumque inventore debitis iusto corrupti quos repellat quisquam?</div>
+              <a href="#" class="flex">
+                Read more...
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </article>
+      <footer>
+        <div>
+          <a href="#">Home</a>
+          <a href="./post.html">Post</a>
+          <a href="./about.html">About</a>
+        </div>
+        <small>&copy; React Inc 2020, Suleiman Mustapha</small>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>
